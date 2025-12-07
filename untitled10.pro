@@ -10,21 +10,21 @@ CONFIG += c++17
 
 SOURCES += \
     chess960_logic.cpp \
-    chess_factory.cpp \
-    chess_piece.cpp \
     chessboard.cpp \
+    chessepiece.cpp \
     first_window.cpp \
     main.cpp \
     mainwindow.cpp \
+    piecefactory.cpp \
     second_window.cpp
 
 HEADERS += \
     chess960_logic.h \
-    chess_factory.h \
-    chess_piece.h \
     chessboard.h \
+    chessepiece.h \
     first_window.h \
     mainwindow.h \
+    piecefactory.h \
     second_window.h
 
 FORMS += \

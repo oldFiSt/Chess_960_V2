@@ -1,10 +1,10 @@
 release/chess960_logic.o
-release/chess_factory.o
-release/chess_piece.o
 release/chessboard.o
+release/chessepiece.o
 release/first_window.o
 release/main.o
 release/mainwindow.o
+release/piecefactory.o
 release/second_window.o
 release/qrc_chesse.o
 release/moc_chessboard.o

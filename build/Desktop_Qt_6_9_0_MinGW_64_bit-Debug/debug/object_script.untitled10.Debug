@@ -1,10 +1,10 @@
 debug/chess960_logic.o
-debug/chess_factory.o
-debug/chess_piece.o
 debug/chessboard.o
+debug/chessepiece.o
 debug/first_window.o
 debug/main.o
 debug/mainwindow.o
+debug/piecefactory.o
 debug/second_window.o
 debug/qrc_chesse.o
 debug/moc_chessboard.o

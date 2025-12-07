@@ -3,10 +3,10 @@
 
 #include <QDialog>
 #include <QPushButton>
+#include <memory>
 #include <vector>
-#include <string>
-#include <utility>
 #include "chess960_logic.h"
+#include "piecefactory.h"
 
 namespace Ui {
 class Second_window;
@@ -26,14 +26,18 @@ private slots:
 private:
     void setupBoard();
     void setupPieces();
-    void setPiece(int row, int col, const std::string& pieceCode);
-    std::string getPieceSymbol(const std::string& pieceCode);
+    void setPiece(int row, int col, std::unique_ptr<ChessPiece> piece);
+    void movePiece(int fromRow, int fromCol, int toRow, int toCol);
+    void clearSelection();
 
     Ui::Second_window *ui;
     QPushButton* squares[8][8];
-    std::string chessBoardState[8][8];
-    QPushButton* selectedCell;
-    int selectedRow, selectedCol;
+    ChessPiece* board[8][8];  // Используем простой массив указателей
+
+    // Для выбора фигуры
+    int selectedRow = -1;
+    int selectedCol = -1;
+
     Chess960Logic chess960;
 };
 
