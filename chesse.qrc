@@ -1,0 +1,20 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+    <!-- Черные фигуры -->
+    <file>icon/bb.png</file>
+    <file>icon/bk.png</file>
+    <file>icon/bn.png</file>
+    <file>icon/bp.png</file>
+    <file>icon/br.png</file>
+    <file>icon/bq.png</file>
+    
+    <!-- Белые фигуры -->
+    <file>icon/wb.png</file>
+    <file>icon/wk.png</file>
+    <file>icon/wn.png</file>
+    <file>icon/wp.png</file>
+    <file>icon/wr.png</file>
+    <file>icon/wq.png</file>
+</qresource>
+</RCC>
